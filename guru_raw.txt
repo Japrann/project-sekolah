@@ -1,0 +1,786 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+        
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+	<meta name="title" content="Guru"/>
+	<meta name="description" content="..."/>
+	<meta name="keywords" content=""/>
+	<meta name="copyright" content="mysch.id"/>	
+	<meta name="author" content="mysch.id"/>	
+	<meta name="geo.placename" content="indonesia"/>
+	<meta name="geo.country" content="id"/>
+	<meta name="content-language" content="id"/>
+	
+	<meta property="fb:app_id" content="145000412781544" /> 
+	<meta property="og:title" content="Guru" />
+	<meta property="og:description" content="..." />
+	<meta property="og:image" content="https://www.smppgri1tangerang.sch.id/upload/imagecache/33795356WhatsApp_Image_2023-11-01_at_15.41.10_1d9b4e8d-removebg-preview-500x479.png"/>
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="600" />
+	<meta property="og:image:alt" content="Guru" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://www.smppgri1tangerang.sch.id/guru/" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+	<!-- Favicon -->
+    <link rel="shortcut icon" href="https://www.smppgri1tangerang.sch.id/upload/imagecache/65916097WhatsApp_Image_2023-11-01_at_15.41.10_1d9b4e8d-removebg-preview-32x32.png">
+    <!-- Style Top-->
+    <style>
+    @media (max-width: 992px) {
+    
+    			#top-bar.transparent-topbar {
+    				z-index: 399;
+    				border-bottom: 0;
+    				margin-top: 15px;
+    			}
+    
+    			#top-bar.transparent-topbar {
+    				background: transparent !important;
+    			}
+    
+    			#top-bar + #header.transparent-header.floating-header {
+    				margin-top: 15px;
+    			}
+    
+    		}
+    
+    		.dark .top-links li > a,
+    		.dark #top-social li a { color: #FFF; }
+    
+    		.dark .top-links li:hover { background-color: rgba(255,255,255,0.15); }
+    
+    		.dark #top-social li { border-left: 0; }
+        @media only screen and (max-width: 800px) {
+        #top-bar {
+           display: none;
+        }
+    }
+    </style>
+
+    <!-- JQuery-->
+    <script src="https://assets.mysch.id/themes/canvas/js/jquery.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://assets.mysch.id/themes/canvas/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="https://assets.mysch.id/themes/canvas/style.css" type="text/css" />
+	<link rel="stylesheet" href="https://assets.mysch.id/themes/canvas/css/swiper.css" type="text/css" />
+	
+	<!-- pagination -->
+    <link rel="stylesheet" href="https://assets.mysch.id/themes/canvas/default/datatables/dataTables.bootstrap4.min.css">
+    <script src="https://assets.mysch.id/themes/canvas/default/datatables/jquery.dataTables.min.js"></script>
+    <script src="https://assets.mysch.id/themes/canvas/default/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="https://assets.mysch.id/themes/canvas/default/datatables/datatables-demo.js"></script> 
+
+	<!-- One Page Module Specific Stylesheet -->
+	<link rel="stylesheet" href="https://assets.mysch.id/themes/canvas/one-page/onepage.css" type="text/css" />
+	<!-- / -->
+
+	<link rel="stylesheet" href="https://assets.mysch.id/themes/canvas/css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="https://assets.mysch.id/themes/canvas/css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="https://assets.mysch.id/themes/canvas/one-page/css/et-line.css" type="text/css" />
+	<link rel="stylesheet" href="https://assets.mysch.id/themes/canvas/css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="https://assets.mysch.id/themes/canvas/css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="https://assets.mysch.id/themes/canvas/one-page/css/fonts.css" type="text/css" />
+
+	<link rel="stylesheet" href="https://assets.mysch.id/themes/canvas/css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="https://www.webmysch.my.id/cms/theme/canvas/include/rs-plugin/css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="https://www.webmysch.my.id/cms/theme/canvas/include/rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="https://www.webmysch.my.id/cms/theme/canvas/include/rs-plugin/css/navigation.css">
+
+<style>
+		.custom-hero-nav {
+			position: absolute;
+			top: 50%;
+			left: 100px;
+			margin-top: 35px;
+			transform: translateY(-50%);
+			z-index: 1;
+			background-color: transparent;
+			padding: 20px 60px 20px 40px;
+			border-radius: 4px;
+			transition: background-color .3s ease;
+		}
+
+		.device-xs .custom-hero-nav,
+		.device-sm .custom-hero-nav,
+		.device-md .custom-hero-nav {
+			top: 100px;
+			left: 50%;
+			transform: translateX(-50%) translateY(0);
+			margin-top: 0;
+			background-color: rgba(255, 255, 255, 0.3);
+		}
+
+		.custom-hero-nav:hover { background-color: #FFF; }
+
+		.custom-hero-nav ul { counter-reset: dots; }
+
+		.custom-hero-nav li {
+			display: block;
+			margin: 15px 0;
+		}
+
+		.custom-hero-nav li:before {
+			margin-right: 16px;
+			color: #FFF;
+			font-weight: 500;
+			opacity: .6;
+			counter-increment: dots;
+			content: counter(dots, decimal-leading-zero) ".";
+			transition: color .3s ease;
+		}
+
+		.custom-hero-nav:hover li:before { color: #999; }
+
+		.custom-hero-nav li a {
+			display: inline-block;
+			font-size: 14px;
+			font-weight: 500;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: #EEE;
+			-webkit-transition: color .3s ease;
+			-o-transition: color .3s ease;
+			transition: color .3s ease;
+		}
+
+		.custom-hero-nav:hover li a { color: #555; }
+
+		.tiny_bullet_slider .tp-bullet:before{content:" ";  position:absolute;  width:100%;  height:25px;  top:-12px;  left:0px;  background:transparent}#rev_slider_103_1 .uranus.tparrows{width:50px; height:50px; background:rgba(255,255,255,0)}#rev_slider_103_1 .uranus.tparrows:before{width:50px; height:50px; line-height:50px; font-size:40px; transition:all 0.3s;-webkit-transition:all 0.3s}#rev_slider_103_1 .uranus.tparrows:hover:before{opacity:0.75}.bullet-bar.tp-bullets{}.bullet-bar.tp-bullets:before{content:" ";position:absolute;width:100%;height:100%;background:transparent;padding:10px;margin-left:-10px;margin-top:-10px;box-sizing:content-box}.bullet-bar .tp-bullet{width:60px;height:3px;position:absolute;background:#aaa;  background:rgba(204,204,204,0.5);cursor:pointer;box-sizing:content-box}.bullet-bar .tp-bullet:hover,.bullet-bar .tp-bullet.selected{background:rgba(204,204,204,1)}.bullet-bar .tp-bullet-image{}.bullet-bar .tp-bullet-title{}.device-xl .rev_row_wrap,.device-lg .rev_row_wrap { width: 600px !important; left: 0 !important; }.device-xs .tp-bullets,.device-sm .tp-bullets,.device-md .tp-bullets { left: 50% !important; transform: translate(-50%, -33px) !important;}
+	</style>
+	
+	<!-- Kode Tambahan -->
+	<head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11470699974">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11470699974');
+</script></head>	
+	<!-- Document Title
+	============================================= -->
+	<title>Guru</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Top Bar
+		============================================= -->
+		
+<div id="top-bar" class="transparent-topbar" >
+	<div class="container clearfix">
+
+		<div class="row justify-content-between">
+			<div class="col-12 col-md-auto">
+
+				<!-- Top Links
+				============================================= --><script type="text/javascript">
+    $(document).ready(function(){
+    var first = 0;
+    var speed = 400;
+    var pause = 3000;
+    function removeFirst(){
+    	first = $('ul#listticker li:first').html();
+    	$('ul#listticker li:first')
+    	.animate({opacity: 0}, speed)
+    	.fadeOut('slow', function() {$(this).remove();});
+    	addLast(first);
+    }
+    function addLast(first){
+    	last = '<li style="display:none">'+first+'</li>';
+    	$('ul#listticker').append(last)
+    	$('ul#listticker li:last')
+    	.animate({opacity: 1}, speed)
+    	.fadeIn('slow')
+    }
+    interval = setInterval(removeFirst, pause);
+    });
+</script>
+<style type="text/css">
+#listticker{ float:left; height:20px;  overflow:hidden;}
+#listticker li{ border:0; margin:0; padding:0; list-style:none;	 font-weight:400; }
+#listticker a:link, #listticker a:visited {  text-decoration:none; font-weight:400; }
+#listticker a:hover { text-decoration:none; color:#0000CC; font-weight:400; }
+</style>
+<div class='mt-2'>
+    <b style="float:left;" class='fancy-title title-bottom-border'>NEWS UPDATE : &nbsp; </b>
+    <ul id="listticker" >
+        	
+    		<li><a href="https://www.smppgri1tangerang.sch.id/berita/detail/990902/pendaftaran-murid-baru-smp-pgri-1-tangerang-tahun-pelajaran-20262027-telah-dibuka/" title="Pendaftaran Murid Baru SMP PGRI 1 Tangerang Tahun Pelajaran "><h5 class='subtitle cookie-font'>Pendaftaran Murid Baru SMP PGRI 1 Tangerang Tahun Pelajaran ...</h5></a></li>	
+    		<li><a href="https://www.smppgri1tangerang.sch.id/berita/detail/990668/smp-pgri-1-tangerang-umumkan-kelulusan-247-siswa-kelas-9-tahun-ajaran-20242025/" title="SMP PGRI 1 Tangerang Umumkan Kelulusan 247 Siswa Kelas 9 Tah"><h5 class='subtitle cookie-font'>SMP PGRI 1 Tangerang Umumkan Kelulusan 247 Siswa Kelas 9 Tah...</h5></a></li>	
+    		<li><a href="https://www.smppgri1tangerang.sch.id/berita/detail/990662/smp-pgri-1-tangerang-tidak-termasuk-sekolah-penerima-bop-dari-pemerintah-kota-tangerang/" title="SMP PGRI 1 Tangerang Tidak Termasuk Sekolah Penerima BOP Dar"><h5 class='subtitle cookie-font'>SMP PGRI 1 Tangerang Tidak Termasuk Sekolah Penerima BOP Dar...</h5></a></li>	
+    		<li><a href="https://www.smppgri1tangerang.sch.id/berita/detail/990117/smp-pgri-1-tangerang-adakan-kegiatan-pesantren-ramadhan-1446-h-bagi-peserta-didik/" title="SMP PGRI 1 Tangerang Adakan Kegiatan Pesantren Ramadhan 1446"><h5 class='subtitle cookie-font'>SMP PGRI 1 Tangerang Adakan Kegiatan Pesantren Ramadhan 1446...</h5></a></li>	
+    		<li><a href="https://www.smppgri1tangerang.sch.id/berita/detail/990063/review-perjalanan-p5-smp-pgri-1-tangerang-tahun-ajaran-20242025/" title="Review Perjalanan P5 SMP PGRI 1 Tangerang Tahun Ajaran 2024/"><h5 class='subtitle cookie-font'>Review Perjalanan P5 SMP PGRI 1 Tangerang Tahun Ajaran 2024/...</h5></a></li>	
+    		<li><a href="https://www.smppgri1tangerang.sch.id/berita/detail/990061/lagi-peserta-didik-smp-pgri-1-tangerang-raih-prestasi-akademis-dan-non-akademis-di-tahun-ajaran-20242025/" title="Lagi! Peserta Didik SMP PGRI 1 Tangerang Raih Prestasi Akade"><h5 class='subtitle cookie-font'>Lagi! Peserta Didik SMP PGRI 1 Tangerang Raih Prestasi Akade...</h5></a></li>	
+    		<li><a href="https://www.smppgri1tangerang.sch.id/berita/detail/989330/serah-terima-jabatan-kepala-sekolah-baru-smp-pgri-1-tangerang-tahun-20242025/" title="Serah Terima Jabatan Kepala Sekolah Baru SMP PGRI 1 Tangeran"><h5 class='subtitle cookie-font'>Serah Terima Jabatan Kepala Sekolah Baru SMP PGRI 1 Tangeran...</h5></a></li>	
+    		<li><a href="https://www.smppgri1tangerang.sch.id/berita/detail/986727/smp-pgri-1-tangerang-gelar-kegiatan-mpls-tahun-pelajaran-20242025/" title="SMP PGRI 1 Tangerang Gelar Kegiatan MPLS Tahun Pelajaran 202"><h5 class='subtitle cookie-font'>SMP PGRI 1 Tangerang Gelar Kegiatan MPLS Tahun Pelajaran 202...</h5></a></li>	
+    		<li><a href="https://www.smppgri1tangerang.sch.id/berita/detail/986466/johanes-vicko-manugara-siswa-berprestasi-smp-pgri-1-tangerang-jalani-kegiatan-satu-hari-menjadi-walikota-tangerang/" title="Johanes Vicko Manugara, Siswa Berprestasi SMP PGRI 1 Tangera"><h5 class='subtitle cookie-font'>Johanes Vicko Manugara, Siswa Berprestasi SMP PGRI 1 Tangera...</h5></a></li>	
+    		<li><a href="https://www.smppgri1tangerang.sch.id/berita/detail/986036/smp-pgri-1-tangerang-meraih-juara-1-pada-lomba-video-edukasi-gizi-remaja-kota-tangerang-tahun-2024/" title="SMP PGRI 1 Tangerang Meraih Juara 1 Pada Lomba Video Edukasi"><h5 class='subtitle cookie-font'>SMP PGRI 1 Tangerang Meraih Juara 1 Pada Lomba Video Edukasi...</h5></a></li>    
+    </ul> 
+</div><!-- .top-links end -->
+
+			</div>
+
+			<div class="col-12 col-md-auto mt-2">                    <div class='button button-border button-circle' id="clock"></div>
+            		<script type="text/javascript">
+                		function showTime() {
+                		    var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+                			var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+                			var date = new Date();
+                			var day = date.getDate();
+                			var month = date.getMonth();
+                			var thisDay = date.getDay(),
+                			    thisDay = myDays[thisDay];
+                			var yy = date.getYear();
+                			var year = (yy < 1000) ? yy + 1900 : yy;
+                			
+                		    var a_p = "";
+                		    var today = new Date();
+                		    var curr_hour = today.getHours();
+                		    var curr_minute = today.getMinutes();
+                		    var curr_second = today.getSeconds();
+                		    if (curr_hour < 12) {
+                		        a_p = "AM";
+                		    } else {
+                		        a_p = "PM";
+                		    }
+                		    if (curr_hour == 0) {
+                		        curr_hour = 12;
+                		    }
+                		    if (curr_hour > 12) {
+                		        curr_hour = curr_hour - 12;
+                		    }
+                		    curr_hour = checkTime(curr_hour);
+                		    curr_minute = checkTime(curr_minute);
+                		    curr_second = checkTime(curr_second);
+                		    document.getElementById('clock').innerHTML=thisDay + ', ' + day + ' ' + months[month] + ' ' + year + ' ' + curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+                		}
+                 
+                		function checkTime(i) {
+                		    if (i < 10) {
+                		        i = "0" + i;
+                		    }
+                		    return i;
+                		}
+                		setInterval(showTime, 500);
+            		</script>
+            						<!-- #top-social end -->
+    
+			</div>
+		</div>
+
+	</div>
+</div><!-- #top-bar end -->
+
+		<!-- Header
+		============================================= -->
+		    <header id="header" class="transparent-header header-size-md" data-sticky-shrink="false">   
+            <div class="container clearfix">
+                <img src="https://www.smppgri1tangerang.sch.id/upload/picture/63639994WhatsAppImage2024-09-07at08.50.00_763e8394.webp" alt="SMP PGRI 1 TANGERANG" width="100%"/>
+            </div>
+            <div id="primary-menu-trigger">
+    			<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+    		</div>
+		
+    	<div id="header-wrap">
+    	    
+    		<!-- Primary Navigation
+    		============================================= -->
+    	    <nav class="primary-menu">
+    			<ul class="menu-container" style="justify-content: center;">
+    				                <li class='menu-item'><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/daftar-prestasi">Daftar Prestasi</a></li>                <li class='menu-item'><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/"></a></li>                <li class='menu-item'><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/">Home</a></li>                <li class="menu-item"><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/">Tenaga Kependidikan</a>
+    				<ul class="sub-menu-container">
+    					                                        <li class="menu-item"><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/guru"><div>Guru</div></a></li>                                        <li class="menu-item"><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/staff--tenaga-kependidikan"><div>Staff & Tenaga Kependidikan</div></a></li>                            
+                    </ul>
+                </li>                <li class='menu-item'><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/kalender-sekolah">Kalender Sekolah</a></li>                <li class='menu-item'><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/berita">BERITA</a></li>                <li class='menu-item'><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/informasi">Informasi</a></li>                <li class='menu-item'><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/galeri">Galeri</a></li>                <li class='menu-item'><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/ekstrakurikuler">Ekstrakurikuler</a></li>                <li class="menu-item"><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/daftar-link">Daftar Link</a>
+    				<ul class="sub-menu-container">
+    					                                        <li class="menu-item"><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/portal-spectra-smart-school"><div>Portal Spectra Smart School</div></a></li>                            
+                    </ul>
+                </li>                <li class='menu-item'><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/polling-pengunjung">Polling Pengunjung</a></li>                <li class='menu-item'><a class='menu-link' href="https://www.smppgri1tangerang.sch.id/buku-tamu">Buku Tamu</a></li>		
+    			</ul>
+    			
+    		</nav>
+    	</div>
+    </header>		<!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+	<section id="page-title" class="js-doc-top-el">
+
+	<div class="container clearfix bottom-border-1">
+		<h1 class='title-bottom-border'>Guru</h1>
+		
+	</div>
+
+</section><section id='content' class="about-us-area section-padding-100 mt-4 js-doc-main-el">
+    <div class="container">
+        <div class="row flex">
+            <div class="col-md-3 order-2 order-md-1">                					    <div id="widget mt-2">
+                							<div class="widget">
+                								<div class="fancy-title title-border title-bottom-border center" data-animate="bounceInDown"><h3 class='nott'>Pencarian</h3></div>
+                								<hr>
+                								<div class="widget_body"><form role="search" method="get" action="https://www.smppgri1tangerang.sch.id/cari/"> 
+	<label>
+		<input type="text" class="form-control" placeholder="Search …" name="keyword" id="keyword">
+	</label> 
+	<input type="submit" class="btn btn-info" value="Search">
+</form></div>
+                							</div>
+                						</div><hr>                					    <div id="widget mt-2">
+                							<div class="widget">
+                								<div class="fancy-title title-border title-bottom-border center" data-animate="bounceInDown"><h3 class='nott'>TikTok</h3></div>
+                								<hr>
+                								<div class="widget_body"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@smppgri1tangerang" data-unique-id="smppgri1tangerang" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@smppgri1tangerang?refer=creator_embed">@smppgri1tangerang</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script></div>
+                							</div>
+                						</div><hr>                					    <div id="widget mt-2">
+                							<div class="widget">
+                								<div class="fancy-title title-border title-bottom-border center" data-animate="bounceInDown"><h3 class='nott'>Instagram</h3></div>
+                								<hr>
+                								<div class="widget_body"><!-- SnapWidget -->
+<iframe src="https://snapwidget.com/embed/1060952" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:290px; height:160px"></iframe></div>
+                							</div>
+                						</div><hr>                					    <div id="widget mt-2">
+                							<div class="widget">
+                								<div class="fancy-title title-border title-bottom-border center" data-animate="bounceInDown"><h3 class='nott'>Youtube</h3></div>
+                								<hr>
+                								<div class="widget_body"><iframe width="560" height="315" src="https://www.youtube.com/embed/zd17uyFAXQ0?si=XNGCGPsg0RgxoTYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                							</div>
+                						</div><hr>			</div>
+            <div class="col-md-6 order-1 order-md-2">            				<div id="main">
+                    			<div class="main">
+                    				<div class="fancy-title title-bottom-border" data-animate="swing"><h3 class="nott ls0" style='font-size:35px'></h3></div>
+                    				<div class="main_body">        <h2>Guru</h2>
+        <div class="row">                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div style="border:1px solid #DADADA; margin-bottom:20px;">
+                            <a href="https://www.smppgri1tangerang.sch.id/guru/detail/118/abdul-munir-se/" title="Abdul Munir, SE">
+                            <img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/96589119pakmunir-360x480.jpg" alt="Abdul Munir, SE" width="100%">
+                            <p class="text-center">
+                                Abdul Munir, SE<br/>
+                                <small>Mapel: TIK</small>
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div style="border:1px solid #DADADA; margin-bottom:20px;">
+                            <a href="https://www.smppgri1tangerang.sch.id/guru/detail/103/ana-permatasari-spsi/" title="Ana Permatasari, S.Psi">
+                            <img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/78210213IMG_0045_-_Copy-removebg-preview-360x480.png" alt="Ana Permatasari, S.Psi" width="100%">
+                            <p class="text-center">
+                                Ana Permatasari, S.Psi<br/>
+                                <small>Mapel: Konseling</small>
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div style="border:1px solid #DADADA; margin-bottom:20px;">
+                            <a href="https://www.smppgri1tangerang.sch.id/guru/detail/109/candraditya-kamawitra/" title="Candraditya Kamawitra">
+                            <img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/9624093pakchandra-360x480.jpg" alt="Candraditya Kamawitra" width="100%">
+                            <p class="text-center">
+                                Candraditya Kamawitra<br/>
+                                <small>Mapel: Seni Budaya</small>
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div style="border:1px solid #DADADA; margin-bottom:20px;">
+                            <a href="https://www.smppgri1tangerang.sch.id/guru/detail/116/dani-hascaryo-spd/" title="Dani Hascaryo, S.Pd">
+                            <img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/43475099pakdani-360x480.jpg" alt="Dani Hascaryo, S.Pd" width="100%">
+                            <p class="text-center">
+                                Dani Hascaryo, S.Pd<br/>
+                                <small>Mapel: Bahasa Inggris</small>
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div style="border:1px solid #DADADA; margin-bottom:20px;">
+                            <a href="https://www.smppgri1tangerang.sch.id/guru/detail/75375/darojatul-ula/" title="Darojatul Ula">
+                            <img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/33387012paknjat-360x480.jpg" alt="Darojatul Ula" width="100%">
+                            <p class="text-center">
+                                Darojatul Ula<br/>
+                                <small>Mapel: Seni Budaya</small>
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div style="border:1px solid #DADADA; margin-bottom:20px;">
+                            <a href="https://www.smppgri1tangerang.sch.id/guru/detail/75373/devi-widi-nurhani-spd/" title="Devi Widi Nurhani, S.Pd">
+                            <img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/40869512budevi-360x480.jpg" alt="Devi Widi Nurhani, S.Pd" width="100%">
+                            <p class="text-center">
+                                Devi Widi Nurhani, S.Pd<br/>
+                                <small>Mapel: Matematika</small>
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div style="border:1px solid #DADADA; margin-bottom:20px;">
+                            <a href="https://www.smppgri1tangerang.sch.id/guru/detail/102/dr-a-ghazali-taufiq-mpd/" title="Dr. A. Ghazali Taufiq, M.Pd">
+                            <img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/81810886paktaufiq-360x480.jpg" alt="Dr. A. Ghazali Taufiq, M.Pd" width="100%">
+                            <p class="text-center">
+                                Dr. A. Ghazali Taufiq, M.Pd<br/>
+                                <small>Mapel: -</small>
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div style="border:1px solid #DADADA; margin-bottom:20px;">
+                            <a href="https://www.smppgri1tangerang.sch.id/guru/detail/104/drs-oding-harsono/" title="Drs. Oding Harsono">
+                            <img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/62283043pakoding-360x480.jpg" alt="Drs. Oding Harsono" width="100%">
+                            <p class="text-center">
+                                Drs. Oding Harsono<br/>
+                                <small>Mapel: Matematika</small>
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div style="border:1px solid #DADADA; margin-bottom:20px;">
+                            <a href="https://www.smppgri1tangerang.sch.id/guru/detail/117/fahrodin-skom/" title="Fahrodin, S.Kom">
+                            <img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/96364119pakdin-360x480.jpg" alt="Fahrodin, S.Kom" width="100%">
+                            <p class="text-center">
+                                Fahrodin, S.Kom<br/>
+                                <small>Mapel: TIK</small>
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div style="border:1px solid #DADADA; margin-bottom:20px;">
+                            <a href="https://www.smppgri1tangerang.sch.id/guru/detail/75374/henny-aprilistini/" title="Henny Aprilistini">
+                            <img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/39597474IMG_4289-removebg-preview-360x480.jpg" alt="Henny Aprilistini" width="100%">
+                            <p class="text-center">
+                                Henny Aprilistini<br/>
+                                <small>Mapel: Bahasa Inggris</small>
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div style="border:1px solid #DADADA; margin-bottom:20px;">
+                            <a href="https://www.smppgri1tangerang.sch.id/guru/detail/75365/ilham-nurseha-spd/" title="Ilham Nurseha, S.Pd">
+                            <img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/18070504pakillham-360x480.jpg" alt="Ilham Nurseha, S.Pd" width="100%">
+                            <p class="text-center">
+                                Ilham Nurseha, S.Pd<br/>
+                                <small>Mapel: PJOK</small>
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div style="border:1px solid #DADADA; margin-bottom:20px;">
+                            <a href="https://www.smppgri1tangerang.sch.id/guru/detail/105/ira-meilani-spsi/" title="Ira Meilani, S.Psi">
+                            <img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/76733994buira-360x480.jpg" alt="Ira Meilani, S.Psi" width="100%">
+                            <p class="text-center">
+                                Ira Meilani, S.Psi<br/>
+                                <small>Mapel: Konselor</small>
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                                
+        </div>
+        <div class="academy-pagination-area wow fadeInUp" data-wow-delay="400ms">
+                <nav>
+                    <ul class="pagination">            			    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+            			    <li class="page-item"><a class="page-link" href="#">&lsaquo;</a></li><li class="page-item active"><a class="page-link" href="#">1</a></li><li class="page-item"><a class="page-link" href="https://www.smppgri1tangerang.sch.id/guru/page/2/" title="2">2</a></li>            				<li class="page-item"><a href="https://www.smppgri1tangerang.sch.id/guru/page/2/" class="page-link" title="Next">&rsaquo;</a></li>
+            				<li class="page-item"><a href="https://www.smppgri1tangerang.sch.id/guru/page/2/" class="page-link" title="Last">&raquo;</a></li>                        <!--
+                        <li class="page-item active"><a class="page-link" href="#">01</a></li>
+                        <li class="page-item"><a class="page-link" href="#">02</a></li>
+                        <li class="page-item"><a class="page-link" href="#">03</a></li>
+                        -->
+                    </ul>
+                </nav>
+            </div></div>
+                    			</div>
+                    		</div>			</div>
+		    <div class="col-md-3 order-3 order-md-3">            					    <div id="widget mt-2">
+            							<div class="widget">
+            								<div class="fancy-title title-bottom-border center" data-animate="bounceInDown"><h3 class='nott'>PPDB 2025/2026 Online</h3></div>
+            								<hr>
+            								<div class="widget_body">
+<a href="/ppdb" title="PPDB 2023 Online"  target="_blank">
+    <img width="100%" src="https://www.smppgri1tangerang.sch.id/upload/imagecache/66510683INGLES(1)-400x335.webp" alt="PPDB 2023 Online" />
+</a> </div>
+            							</div>
+            						</div><hr>            					    <div id="widget mt-2">
+            							<div class="widget">
+            								<div class="fancy-title title-bottom-border center" data-animate="bounceInDown"><h3 class='nott'>Berita Terbaru</h3></div>
+            								<hr>
+            								<div class="widget_body">        <div class='container-clearfix row' >            
+                            <div class="entry col-12 mb-0">
+					<div class="grid-inner row no-gutters">
+						<div class="col-auto">
+							<div class="entry-image">
+								<a href="https://www.smppgri1tangerang.sch.id/berita/detail/990902/pendaftaran-murid-baru-smp-pgri-1-tangerang-tahun-pelajaran-20262027-telah-dibuka/"><img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/529684602-Copy-100x100.webp" alt="Pendaftaran Murid Baru SMP PGRI 1 Tangerang Tahun Pelajaran 2026/2027 Telah Dibuka"></a>
+							</div>
+						</div>
+						<div class="col pl-3">
+							<div class="entry-title">
+								<h4><a href="https://www.smppgri1tangerang.sch.id/berita/detail/990902/pendaftaran-murid-baru-smp-pgri-1-tangerang-tahun-pelajaran-20262027-telah-dibuka/">Pendaftaran Murid Baru SMP PGRI 1 Tangerang Tahun Pelajaran 2026/2027 Telah Dibuka</a></h4>
+							</div>
+							<div class="entry-meta">
+								<ul>
+									<li>05-07-2025 pukul 10:41</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+                                
+                            <div class="entry col-12 mb-0">
+					<div class="grid-inner row no-gutters">
+						<div class="col-auto">
+							<div class="entry-image">
+								<a href="https://www.smppgri1tangerang.sch.id/berita/detail/990668/smp-pgri-1-tangerang-umumkan-kelulusan-247-siswa-kelas-9-tahun-ajaran-20242025/"><img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/14893289Blue&OrangeMinimalSchoolAdmissionInstagramPost-100x100.webp" alt="SMP PGRI 1 Tangerang Umumkan Kelulusan 247 Siswa Kelas 9 Tahun Ajaran 2024/2025"></a>
+							</div>
+						</div>
+						<div class="col pl-3">
+							<div class="entry-title">
+								<h4><a href="https://www.smppgri1tangerang.sch.id/berita/detail/990668/smp-pgri-1-tangerang-umumkan-kelulusan-247-siswa-kelas-9-tahun-ajaran-20242025/">SMP PGRI 1 Tangerang Umumkan Kelulusan 247 Siswa Kelas 9 Tahun Ajaran 2024/2025</a></h4>
+							</div>
+							<div class="entry-meta">
+								<ul>
+									<li>05-06-2025 pukul 10:52</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+                                
+                            <div class="entry col-12 mb-0">
+					<div class="grid-inner row no-gutters">
+						<div class="col-auto">
+							<div class="entry-image">
+								<a href="https://www.smppgri1tangerang.sch.id/berita/detail/990662/smp-pgri-1-tangerang-tidak-termasuk-sekolah-penerima-bop-dari-pemerintah-kota-tangerang/"><img src="https://www.smppgri1tangerang.sch.id/upload/imagecache/29891331IMG_7156-100x100.webp" alt="SMP PGRI 1 Tangerang Tidak Termasuk Sekolah Penerima BOP Dari Pemerintah Kota Tangerang"></a>
+							</div>
+						</div>
+						<div class="col pl-3">
+							<div class="entry-title">
+								<h4><a href="https://www.smppgri1tangerang.sch.id/berita/detail/990662/smp-pgri-1-tangerang-tidak-termasuk-sekolah-penerima-bop-dari-pemerintah-kota-tangerang/">SMP PGRI 1 Tangerang Tidak Termasuk Sekolah Penerima BOP Dari Pemerintah Kota Tangerang</a></h4>
+							</div>
+							<div class="entry-meta">
+								<ul>
+									<li>05-06-2025 pukul 09:11</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+                            </div></div>
+            							</div>
+            						</div><hr>            					    <div id="widget mt-2">
+            							<div class="widget">
+            								<div class="fancy-title title-bottom-border center" data-animate="bounceInDown"><h3 class='nott'>Lokasi Kami</h3></div>
+            								<hr>
+            								<div class="widget_body"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3966.529447111889!2d106.62632234905506!3d-6.1936517954941355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1579927634038!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+<script src="https://instawidget.net/js/instawidget.js?u=e64997ba568499231f36c6c3eba2841205c38e8c6ef5850eb9e18cbc345e0b6e&width=200px"></script></div>
+            							</div>
+            						</div><hr>            					    <div id="widget mt-2">
+            							<div class="widget">
+            								<div class="fancy-title title-bottom-border center" data-animate="bounceInDown"><h3 class='nott'></h3></div>
+            								<hr>
+            								<div class="widget_body"><script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-8d4d0369-19af-4ccd-970c-b5e67ac433ef"></div></div>
+            							</div>
+            						</div><hr>			</div>
+		</div>
+	</div>
+</section>
+		<!-- Slider
+		============================================= -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class='light'>
+			<div class="container">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap pb-4">
+
+					<div class="row">						            <div class="col-lg-3 col-md-3 col-12 mt-4">
+            							<div class="widget">
+            								<h3 class="fancy-title title-border title-left nott">Hubungi Kami</h3>
+                                            <hr>
+            								<div>
+            								    
+    
+    <b><i class="icon-line2-home mr-1"></i>Alamat :</b>
+	<p>Komplek Pendidikan Cikokol Jl. Perintis Kemerdekaan 2 (Depan Tangcity Mall/Samping SMKN 1 Tangerang) Kota Tangerang</p>
+			<b><i class="icon-phone mr-1"></i>Telepon :</b>
+		<p>0215534589 - 08121898951</p>		<b><i class="icon-envelope21 mr-1"></i>Email :</b>
+		<p>dani@smppgri1tngr.sch.id</p>		<b><i class="icon-line-globe mr-1"></i>Website :</b>
+		<p>smppgri1tangerang.sch.id</p>	<b>Media Sosial :</b>
+		<ul class="side" style="margin-left:10px;">
+		    		        <li><i></i><a href="https://www.facebook.com/smppgri1kotatangerang/?_rdc=1&_rdr" title="Facebook" target="_blank">Facebook</a></li>
+		        		        <li><i></i><a href="https://twitter.com/smppgri1tngr" title="Twitter" target="_blank">Twitter</a></li>
+		        		        <li><i></i><a href="https://www.instagram.com/smppgri1tangerang/" title="Instagram" target="_blank">Instagram</a></li>
+		        		        <li><i></i><a href="https://www.youtube.com/c/SMPPGRI1Tangerang" title="Youtube" target="_blank">Youtube</a></li>
+		        		        <li><i></i><a href="https://wa.me/08121898951" title="Whatsapp" target="_blank">Whatsapp</a></li>
+		        		</ul>
+		            								</div>
+            
+            							</div>
+            						</div>						
+
+					</div>
+				</div><!-- .footer-widgets-wrap end -->
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" style="background: url('https://assets.mysch.id/themes/canvas/demos/spa/footer.svg') no-repeat top center; background-size: cover; padding-top: 70px;">
+				<div class="container">
+
+					<div class="row justify-content-between align-items-center text-left">
+						<div class="col-md-12">
+							Copyright-2025-SMP PGRI 1 TANGERANG						</div>
+					</div>
+
+				</div>
+			</div><!-- #copyrights end -->
+		</footer>
+<!-- #footer end --><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="https://assets.mysch.id/themes/canvas/js/plugins.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="https://assets.mysch.id/themes/canvas/js/functions.js"></script>
+	
+	<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+	<script src="https://www.webmysch.my.id/cms/theme/canvas/include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script src="https://www.webmysch.my.id/cms/theme/canvas/include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<!-- SLIDER REVOLUTION EXTENSIONS  -->
+	<script src="https://www.webmysch.my.id/cms/theme/canvas/include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+	<script src="https://www.webmysch.my.id/cms/theme/canvas/include/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script src="https://www.webmysch.my.id/cms/theme/canvas/include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script src="https://www.webmysch.my.id/cms/theme/canvas/include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="https://www.webmysch.my.id/cms/theme/canvas/include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script src="https://www.webmysch.my.id/cms/theme/canvas/include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+
+	<script>
+		// Revolution Slider
+		var revapi95,
+		tpj=jQuery;
+		var $ = jQuery.noConflict();
+
+		tpj(document).ready(function() {
+			if(tpj("#welcome").revolution == undefined){
+				revslider_showDoubleJqueryError("#welcome");
+			}else{
+				revapi95 = tpj("#welcome").show().revolution({
+					sliderType:"standard",
+					jsFileLocation:"https://www.webmysch.my.id/cms/theme/canvas/include/rs-plugin/js/",
+					sliderLayout:"fullscreen",
+					dottedOverlay:"none",
+					delay:9000,
+					navigation: {
+						keyboardNavigation:"off",
+						keyboard_direction: "horizontal",
+						mouseScrollNavigation:"off",
+						 mouseScrollReverse:"default",
+						onHoverStop:"off",
+						touch:{
+							touchenabled:"on",
+							touchOnDesktop:"off",
+							swipe_threshold: 75,
+							swipe_min_touches: 1,
+							swipe_direction: "horizontal",
+							drag_block_vertical: false
+						}
+						,
+						bullets: {
+							enable:true,
+							hide_onmobile:false,
+							style:"bullet-bar",
+							hide_onleave:false,
+							direction:"horizontal",
+							h_align:"left",
+							v_align:"bottom",
+							h_offset:80,
+							v_offset:30,
+							space:5,
+							tmp:''
+						}
+					},
+					viewPort: {
+						enable:true,
+						outof:"wait",
+						visible_area:"100%",
+						presize:true
+					},
+					responsiveLevels:[1240,1024,778,480],
+					visibilityLevels:[1240,1024,778,480],
+					gridwidth:[1240,1024,778,480],
+					gridheight:[950,700,700,700],
+					lazyType:"single",
+					parallax: {
+						type:"scroll",
+						origo:"slidercenter",
+						speed:400,
+					  speedbg:0,
+					  speedls:0,
+						levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
+					},
+					shadow:0,
+					spinner:"spinner3",
+					stopLoop:"on",
+					stopAfterLoops:0,
+					stopAtSlide:1,
+					shuffle:"off",
+					autoHeight:"off",
+					fullScreenAutoWidth:"off",
+					fullScreenAlignForce:"off",
+					fullScreenOffsetContainer: "",
+					fullScreenOffset: "",
+					disableProgressBar:"on",
+					hideThumbsOnMobile:"off",
+					hideSliderAtLimit:0,
+					hideCaptionAtLimit:0,
+					hideAllCaptionAtLilmit:0,
+					debugMode:false,
+					fallbacks: {
+						simplifyAll:"off",
+						nextSlideOnWindowFocus:"off",
+						disableFocusListener:false,
+					}
+				});
+			}
+		});	/*ready*/
+	</script>
+	
+	<!--SUSPEND SITE-->
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* Ekstrakurikuler.css */
+.ekskul-page {
+  background: var(--neutral-50);
+  min-height: 100vh;
+}
+
+.ekskul-header {
+  background: radial-gradient(circle at center, #6366f1, #312e81);
+  color: white;
+  padding: 100px 20px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-badge {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.icon-main {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.ekskul-header h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  margin-bottom: 24px;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.ekskul-header p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.ekskul-content {
+  padding: 80px 20px;
+}
+
+.ekskul-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.ekskul-card {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--neutral-100);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.ekskul-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+  border-color: #e0e7ff;
+}
+
+.ekskul-icon-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  transition: transform 0.3s;
+}
+
+.ekskul-card:hover .ekskul-icon-wrap {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.e-icon { width: 40px; height: 40px; color: white; }
+
+.eks-brown { background: linear-gradient(135deg, #a16207, #713f12); }
+.eks-red { background: linear-gradient(135deg, #ef4444, #b91c1c); }
+.eks-pink { background: linear-gradient(135deg, #ec4899, #be185d); }
+.eks-purple { background: linear-gradient(135deg, #a855f7, #7e22ce); }
+.eks-orange { background: linear-gradient(135deg, #f97316, #c2410c); }
+.eks-blue { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+
+.ekskul-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--neutral-900);
+  margin-bottom: 16px;
+}
+
+.ekskul-card p {
+  color: var(--neutral-600);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  flex: 1;
+}
+
+.join-btn {
+  background: var(--neutral-100);
+  color: var(--neutral-800);
+  border: none;
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.ekskul-card:hover .join-btn {
+  background: var(--primary-600);
+  color: white;
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+}
