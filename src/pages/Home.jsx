@@ -76,7 +76,7 @@ const Home = () => {
                 alt="Kepala Sekolah"
                 style={{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover', border: '4px solid #f8f9fa', boxShadow: 'var(--shadow-sm)', marginBottom: '15px' }}
               />
-              <h5 style={{ fontSize: '1.1rem', marginBottom: '5px' }}>Bapak M.Pd.</h5>
+              <h5 style={{ fontSize: '1.1rem', marginBottom: '5px' }}>Miftah Syarif, S.Pd</h5>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '15px' }}>Assalamu'alaikum Wr. Wb. Selamat datang di website resmi SMP PGRI 1 Tangerang. Melalui wadah ini kami berkomitmen...</p>
               <button className="btn-primary" style={{ fontSize: '0.85rem', padding: '6px 12px' }}>Baca Selengkapnya</button>
             </div>
