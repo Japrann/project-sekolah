@@ -92,6 +92,7 @@
 
 .hero-title-highlight {
   background: linear-gradient(to right, var(--primary-600), var(--secondary-600), #ec4899);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -188,6 +189,7 @@
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 900;
   background: linear-gradient(135deg, var(--neutral-900), var(--neutral-600));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 8px;
@@ -837,4 +839,46 @@
 
 .btn-outline-white:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+/* Comprehensive Mobile Responsiveness Improvements */
+@media (max-width: 640px) {
+  .hero-section { padding: 80px 16px 60px; }
+  .features-section,
+  .testimonials-section,
+  .gallery-section,
+  .sambutan-section,
+  .berita-section,
+  .cta-section {
+    padding: 60px 16px;
+  }
+  
+  .section-header h2, .cta-content h2, .section-header-left h2 { font-size: 2rem; }
+  
+  .btn-primary, .hero-btn-secondary, .btn-light, .btn-outline-white {
+    padding: 14px 24px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 8px;
+    justify-content: center;
+  }
+  
+  .cta-actions { gap: 8px; flex-direction: column; width: 100%; }
+  
+  .testi-card { padding: 40px 24px; border-radius: 32px; }
+  .testi-quote-text { font-size: 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 2.2rem; }
+  .hero-subtitle { font-size: 1rem; }
+  
+  .stat-card { padding: 16px; }
+  .stat-num { font-size: 1.8rem; }
+  
+  .hero-stats { grid-template-columns: 1fr; }
+  
+  .berita-card, .feature-card { padding: 20px; }
+  .sambutan-container { gap: 32px; }
+  .gallery-filter-btn { padding: 8px 16px; font-size: 0.9rem; }
 }

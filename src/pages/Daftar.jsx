@@ -5,15 +5,52 @@ import './Daftar.css';
 const Daftar = () => {
   const [step, setStep] = useState(1);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  
+  // Data State
+  const [formData, setFormData] = useState({
+    namaSiswa: '', nisn: '', tempatLahir: '', tanggalLahir: '', asalSekolah: '',
+    namaOrtu: '', noHp: '', email: '', alamat: ''
+  });
+
+  const handleChange = (e) => setFormData({...formData, [e.target.name]: e.target.value});
 
   const handleNext = (e) => {
     e.preventDefault();
     setStep(2);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    setIsLoading(true);
+    
+    try {
+      // Simulate small processing time
+      setTimeout(() => {
+        // Fetch existing data or initialize empty array
+        const existingDataStr = localStorage.getItem('daftarSiswa');
+        const existingData = existingDataStr ? JSON.parse(existingDataStr) : [];
+        
+        // Add new registration with timestamp
+        const newEntry = {
+          ...formData,
+          tanggalDaftar: new Date().toISOString()
+        };
+        
+        existingData.push(newEntry);
+        
+        // Save back to local storage
+        localStorage.setItem('daftarSiswa', JSON.stringify(existingData));
+        
+        setIsLoading(false);
+        setIsSubmitted(true);
+      }, 800);
+      
+    } catch(err) {
+      console.error(err);
+      alert("Error menyimpan pendaftaran.");
+      setIsLoading(false);
+    }
   };
 
   if (isSubmitted) {
@@ -83,7 +120,7 @@ const Daftar = () => {
                    <label>Nama Lengkap Siswa</label>
                    <div className="input-wrapper">
                      <User className="input-icon" />
-                     <input required type="text" placeholder="John Doe" />
+                     <input required name="namaSiswa" value={formData.namaSiswa} onChange={handleChange} type="text" placeholder="John Doe" />
                    </div>
                  </div>
 
@@ -91,7 +128,7 @@ const Daftar = () => {
                    <label>NISN (Opsional)</label>
                    <div className="input-wrapper">
                      <School className="input-icon" />
-                     <input type="text" placeholder="0012345678" />
+                     <input name="nisn" value={formData.nisn} onChange={handleChange} type="text" placeholder="0012345678" />
                    </div>
                  </div>
 
@@ -99,7 +136,7 @@ const Daftar = () => {
                    <label>Tempat Lahir</label>
                    <div className="input-wrapper">
                      <MapPin className="input-icon" />
-                     <input required type="text" placeholder="Jakarta" />
+                     <input required name="tempatLahir" value={formData.tempatLahir} onChange={handleChange} type="text" placeholder="Jakarta" />
                    </div>
                  </div>
 
@@ -107,7 +144,7 @@ const Daftar = () => {
                    <label>Tanggal Lahir</label>
                    <div className="input-wrapper">
                      <Calendar className="input-icon" />
-                     <input required type="date" />
+                     <input required name="tanggalLahir" value={formData.tanggalLahir} onChange={handleChange} type="date" />
                    </div>
                  </div>
               </div>
@@ -116,7 +153,7 @@ const Daftar = () => {
                  <label>Asal Sekolah Dasar (SD)</label>
                  <div className="input-wrapper">
                    <School className="input-icon" />
-                   <input required type="text" placeholder="SDN 01 Percontohan" />
+                   <input required name="asalSekolah" value={formData.asalSekolah} onChange={handleChange} type="text" placeholder="SDN 01 Percontohan" />
                  </div>
               </div>
 
@@ -132,7 +169,7 @@ const Daftar = () => {
                    <label>Nama Orang Tua/Wali</label>
                    <div className="input-wrapper">
                      <User className="input-icon" />
-                     <input required={step===2} type="text" placeholder="Budi Santoso" />
+                     <input required={step===2} name="namaOrtu" value={formData.namaOrtu} onChange={handleChange} type="text" placeholder="Budi Santoso" />
                    </div>
                  </div>
 
@@ -140,7 +177,7 @@ const Daftar = () => {
                    <label>Nomor HP/WhatsApp</label>
                    <div className="input-wrapper">
                      <Phone className="input-icon" />
-                     <input required={step===2} type="tel" placeholder="08123456789" />
+                     <input required={step===2} name="noHp" value={formData.noHp} onChange={handleChange} type="tel" placeholder="08123456789" />
                    </div>
                  </div>
               </div>
@@ -149,14 +186,14 @@ const Daftar = () => {
                  <label>Email (Opsional)</label>
                  <div className="input-wrapper">
                    <Mail className="input-icon" />
-                   <input type="email" placeholder="email@contoh.com" />
+                   <input name="email" value={formData.email} onChange={handleChange} type="email" placeholder="email@contoh.com" />
                  </div>
               </div>
 
               <div className="input-group span-full">
                  <label>Alamat Lengkap</label>
                  <div className="input-wrapper text-area">
-                   <textarea required={step===2} placeholder="Jl. Sudirman No. 1..." />
+                   <textarea required={step===2} name="alamat" value={formData.alamat} onChange={handleChange} placeholder="Jl. Sudirman No. 1..." />
                  </div>
               </div>
 
@@ -164,8 +201,8 @@ const Daftar = () => {
                 <button type="button" onClick={() => setStep(1)} className="btn-back">
                   Kembali
                 </button>
-                <button type="submit" className="btn-submit">
-                  Kirim Pendaftaran
+                <button type="submit" disabled={isLoading} className="btn-submit">
+                  {isLoading ? 'Mengirim Data...' : 'Kirim Pendaftaran'}
                 </button>
               </div>
             </div>

@@ -395,3 +395,39 @@
 .btn-success-home:hover {
   background-color: var(--neutral-800);
 }
+
+/* Comprehensive Mobile Responsiveness Improvements */
+@media (max-width: 480px) {
+  .daftar-form-wrapper {
+    padding: 24px 16px;
+  }
+  
+  .form-header {
+    margin-bottom: 32px;
+  }
+  
+  .form-header h2 {
+    font-size: 2rem;
+  }
+  
+  .input-wrapper input, .input-wrapper textarea {
+    padding: 12px 12px 12px 40px;
+  }
+  
+  .input-icon {
+    left: 12px;
+  }
+  
+  .btn-next, .btn-submit, .btn-back {
+    padding: 12px;
+  }
+  
+  .success-card {
+    padding: 40px 24px;
+    border-radius: 24px;
+  }
+  
+  .success-card h2 {
+    font-size: 1.8rem;
+  }
+}

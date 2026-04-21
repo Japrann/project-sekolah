@@ -15,19 +15,16 @@ async function scrape() {
     const html = await fetchPage('https://www.smppgri1tangerang.sch.id/guru');
     
     // Find images and names
-    // Typically: <img src="url"> ... <h2><a href="...">Name</a></h2>
-    const regex = /<img[^>]+src="([^">]+)"[^>]*>[\s\S]*?<a[^>]*>([^<]+)<\/a>[\s\S]*?Mapel:\s*([^<]+)<\/li>/gi;
+    const regex = /<img[^>]+src="([^">]+)"[^>]*>[\s\S]*?<a[^>]*>([^<]+)<\/a>[\s\S]*?Mapel:\s*([^<]+)<\/small>/gi;
     
     let match;
     const teachers = [];
     while ((match = regex.exec(html)) !== null) {
-      // Clean up whitespace
       const img = match[1].trim();
       const name = match[2].trim();
+      // mapel inside small tag. Wait, earlier regex had </li> which doesn't exist.
       const mapel = match[3].trim();
-      if (!name.includes('<') && name.length > 2) {
-         teachers.push({name, img, mapel});
-      }
+      teachers.push({name, img, mapel});
     }
     
     console.log(JSON.stringify(teachers, null, 2));

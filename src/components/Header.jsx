@@ -43,16 +43,12 @@ const Header = () => {
 
         {/* Right Side Actions */}
         <div className="header-actions">
-          <div className="search-bar hidden-mobile">
-            <Search className="search-icon" />
-            <input type="text" placeholder="Cari sesuatu..." />
-          </div>
           <Link to="/daftar" className="btn-daftar hidden-mobile">
             Daftar Sekarang
           </Link>
-          
+
           {/* Mobile Menu Toggle */}
-          <button 
+          <button
             className="mobile-menu-btn hidden-desktop"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >

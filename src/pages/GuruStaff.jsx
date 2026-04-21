@@ -1,78 +1,92 @@
-import React, { useState } from 'react';
-import { Users, Mail, Phone } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import { Search, MapPin, User, Mail, Shield, Filter } from 'lucide-react';
+import guruStaffData from '../data/gurustaff.json';
 import './GuruStaff.css';
 
 const GuruStaff = () => {
-  const [filter, setFilter] = useState('Semua');
+  const [searchTerm, setSearchTerm] = useState('');
+  const [activeTab, setActiveTab] = useState('Semua');
 
-  const staffData = [
-    { id: 1, name: "Abdul Munir, SE", role: "Guru Mata Pelajaran", category: "Guru", subject: "TIK", image: "https://www.smppgri1tangerang.sch.id/upload/imagecache/96589119pakmunir-360x480.jpg" },
-    { id: 2, name: "Ana Permatasari, S.Psi", role: "Guru BK", category: "Guru", subject: "Konseling", image: "https://www.smppgri1tangerang.sch.id/upload/imagecache/78210213IMG_0045_-_Copy-removebg-preview-360x480.png" },
-    { id: 3, name: "Candraditya Kamawitra", role: "Guru Mata Pelajaran", category: "Guru", subject: "Seni Budaya", image: "https://www.smppgri1tangerang.sch.id/upload/imagecache/9624093pakchandra-360x480.jpg" },
-    { id: 4, name: "Dani Hascaryo, S.Pd", role: "Guru Mata Pelajaran", category: "Guru", subject: "Bahasa Inggris", image: "https://www.smppgri1tangerang.sch.id/upload/imagecache/43475099pakdani-360x480.jpg" },
-    { id: 5, name: "Dr. A. Ghazali Taufiq, M.Pd", role: "Pimpinan / Pengurus", category: "Pimpinan", subject: "Manajemen", image: "https://www.smppgri1tangerang.sch.id/upload/imagecache/81810886paktaufiq-360x480.jpg" },
-    { id: 6, name: "Drs. Oding Harsono", role: "Guru Mata Pelajaran", category: "Guru", subject: "Matematika", image: "https://www.smppgri1tangerang.sch.id/upload/imagecache/62283043pakoding-360x480.jpg" },
-    { id: 7, name: "Fahrodin, S.Kom", role: "Guru Mata Pelajaran", category: "Guru", subject: "TIK", image: "https://www.smppgri1tangerang.sch.id/upload/imagecache/96364119pakdin-360x480.jpg" },
-    { id: 8, name: "Henny Aprilistini", role: "Guru Mata Pelajaran", category: "Guru", subject: "Bahasa", image: "https://www.smppgri1tangerang.sch.id/upload/imagecache/39597474IMG_4289-removebg-preview-360x480.jpg" },
-    { id: 9, name: "Ilham Nurseha, S.Pd", role: "Guru Olahraga", category: "Guru", subject: "PJOK", image: "https://www.smppgri1tangerang.sch.id/upload/imagecache/18070504pakillham-360x480.jpg" },
-    { id: 10, name: "Ira Meilani, S.Psi", role: "Guru BK", category: "Guru", subject: "Konseling", image: "https://www.smppgri1tangerang.sch.id/upload/imagecache/76733994buira-360x480.jpg" },
-    { id: 11, name: "Dedi Sugiharto", role: "Staff Tata Usaha", category: "Staff", subject: "Administrasi", image: "https://www.smppgri1tangerang.sch.id/upload/imagecache/74094623WhatsApp_Image_2022-08-10_at_13.27.39-removebg-preview-360x480.png" },
-    { id: 12, name: "Dyah Lukitaningtyas, S.Pd", role: "Staff Tata Usaha", category: "Staff", subject: "Administrasi", image: "https://www.smppgri1tangerang.sch.id/upload/imagecache/99469194budiah-360x480.jpg" },
-    { id: 13, name: "Emi Rahmawati, S.Pd", role: "Staff Tata Usaha", category: "Staff", subject: "Administrasi", image: "https://www.smppgri1tangerang.sch.id/upload/imagecache/73669197buemi-360x480.jpg" },
-  ];
+  const categories = ['Semua', 'Manajemen', 'Guru', 'Tata Usaha / Staff', 'Keamanan'];
 
-  const filteredStaff = filter === 'Semua' ? staffData : staffData.filter(s => s.category === filter);
+  const filteredData = useMemo(() => {
+    return guruStaffData.filter(person => {
+      const matchSearch = person.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
+                          person.role.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchTab = activeTab === 'Semua' || person.type === activeTab;
+      return matchSearch && matchTab;
+    });
+  }, [searchTerm, activeTab]);
 
   return (
-    <div className="staff-page">
-      <div className="staff-header">
-         <div className="icon-wrapper"><Users className="header-icon"/></div>
-         <h1>Direktori Guru & Tenaga Kependidikan</h1>
-         <p>Mengenal lebih dekat para pahlawan tanpa tanda jasa dan staf profesional yang berdedikasi tinggi membangun karakter generasi penerus bangsa.</p>
-      </div>
+    <div className="guru-staff-page">
+      {/* Header */}
+      <section className="guru-header-section">
+        <div className="container">
+          <h1 className="animate-slide-up">Direktori <span className="text-primary-600">Pendidik & Staff</span></h1>
+          <p className="guru-subtitle animate-slide-up-delay-1">Berkenalan dengan para pendidik, staf manajemen, tata usaha, dan keamanan hebat yang berdedikasi membangun generasi unggul di SMP PGRI 1 Tangerang.</p>
+          
+          <div className="guru-search-box animate-slide-up-delay-2">
+             <Search className="search-icon" />
+             <input 
+               type="text" 
+               placeholder="Cari nama atau jabatan..."
+               value={searchTerm}
+               onChange={(e) => setSearchTerm(e.target.value)}
+             />
+          </div>
+        </div>
+      </section>
 
-      <div className="container staff-content">
-         <div className="filter-bar">
-            {['Semua', 'Pimpinan', 'Guru', 'Staff'].map(f => (
+      {/* Content */}
+      <section className="guru-content-section">
+        <div className="container">
+           {/* Filters */}
+           <div className="guru-filters">
+             {categories.map(cat => (
                <button 
-                 key={f} 
-                 className={`filter-btn ${filter === f ? 'active' : ''}`}
-                 onClick={() => setFilter(f)}
+                 key={cat} 
+                 className={`filter-btn ${activeTab === cat ? 'active' : ''}`}
+                 onClick={() => setActiveTab(cat)}
                >
-                 {f}
+                 {cat}
                </button>
-            ))}
-         </div>
+             ))}
+           </div>
 
-         <div className="staff-grid">
-            {filteredStaff.map(staff => (
-              <div key={staff.id} className="staff-card animate-fade-in">
-                 <div className="staff-avatar-wrapper">
-                    <div className="staff-avatar">
-                      {staff.image.startsWith('http') ? (
-                        <img src={staff.image} alt={staff.name} style={{width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover'}} />
-                      ) : (
-                        staff.image
-                      )}
-                    </div>
-                    <div className="staff-category-badge">{staff.category}</div>
-                 </div>
-                 <div className="staff-info">
-                   <h2>{staff.name}</h2>
-                   <p className="staff-role">{staff.role}</p>
-                   <div className="staff-subject">{staff.subject}</div>
-
-                   <div className="staff-contact">
-                     <button className="contact-btn"><Mail className="c-icon"/></button>
-                     <button className="contact-btn"><Phone className="c-icon"/></button>
+           {/* Cards Grid */}
+           {filteredData.length > 0 ? (
+             <div className="guru-grid">
+               {filteredData.map((person, index) => (
+                 <div key={index} className="person-card">
+                   <div className="person-avatar-wrapper">
+                     {person.image ? (
+                        <img src={person.image} alt={person.name} className="person-avatar" />
+                     ) : (
+                        <div className="person-placeholder">
+                           {person.type === 'Keamanan' ? <Shield className="placeholder-icon" /> : <User className="placeholder-icon" />}
+                        </div>
+                     )}
+                     <div className="person-type-badge">{person.type}</div>
+                   </div>
+                   <div className="person-info">
+                     <h3>{person.name}</h3>
+                     <p className="person-role">{person.role}</p>
                    </div>
                  </div>
-              </div>
-            ))}
-         </div>
-      </div>
+               ))}
+             </div>
+           ) : (
+             <div className="empty-state">
+               <User className="empty-icon" />
+               <h3>Data tidak ditemukan</h3>
+               <p>Coba gunakan kata kunci atau filter lain.</p>
+             </div>
+           )}
+        </div>
+      </section>
     </div>
   );
-}
+};
 
 export default GuruStaff;

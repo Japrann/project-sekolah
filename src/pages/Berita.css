@@ -1,0 +1,240 @@
+/* Berita.css */
+
+.berita-page {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Header Section */
+.berita-header-section {
+  padding: 80px 20px 40px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.page-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.page-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-tertiary);
+  max-width: 600px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+.text-primary-600 {
+  color: var(--primary-600);
+}
+
+.search-bar {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 20px;
+  color: var(--text-tertiary);
+  width: 20px;
+  height: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 16px 20px 16px 52px;
+  border-radius: 999px;
+  border: 1px solid var(--border-2);
+  background: var(--background);
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 4px var(--primary-100);
+}
+
+/* List Section */
+.berita-list-section {
+  padding: 60px 20px 100px;
+  background: var(--background);
+}
+
+.berita-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.berita-card.main-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  height: 100%;
+}
+
+.berita-card.main-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-200);
+}
+
+.berita-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background: var(--neutral-100);
+  overflow: hidden;
+}
+
+.berita-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.berita-card.main-card:hover .berita-image {
+  transform: scale(1.05);
+}
+
+.berita-placeholder-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-tertiary);
+  font-style: italic;
+  background: linear-gradient(135deg, var(--neutral-100), var(--neutral-200));
+}
+
+.berita-category {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  color: var(--primary-700);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: var(--shadow-sm);
+}
+
+.berita-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.berita-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.berita-card.main-card:hover h3 {
+  color: var(--primary-600);
+}
+
+.berita-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.berita-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+.date-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.read-more-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--primary-500);
+  transition: transform 0.3s;
+}
+
+.berita-card.main-card:hover .read-more-icon {
+  transform: translate(2px, -2px);
+}
+
+/* Empty State */
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--surface);
+  border-radius: 24px;
+  border: 1px dashed var(--border-2);
+}
+
+.empty-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--text-tertiary);
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  color: var(--text-tertiary);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 640px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+  
+  .berita-header-section {
+    padding: 60px 16px 32px;
+  }
+  
+  .berita-grid-layout {
+    grid-template-columns: 1fr;
+  }
+}

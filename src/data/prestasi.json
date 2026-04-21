@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "title": "Juara 3 Lomba Basket Putra Dragons Youth Basketball Tournament KU 12+",
+    "level": "SMP",
+    "date": "2025",
+    "desc": "Penghargaan yang diraih kontingen SMP PGRI 1 Tangerang pada event tingkat SMP.",
+    "iconName": "Medal",
+    "color": "blue"
+  },
+  {
+    "id": 2,
+    "title": "Juara 1 Handball Putri Fourfeo Pekan Olahraga Provinsi Banten Ke VII",
+    "level": "Regional",
+    "date": "2025",
+    "desc": "Penghargaan yang diraih kontingen SMP PGRI 1 Tangerang pada event tingkat Regional.",
+    "iconName": "Medal",
+    "color": "blue"
+  },
+  {
+    "id": 3,
+    "title": "Juara 1 O2SN Seleksi Tingkat Korwil Se-Kota Tangerang atas nama Fajrin Izzabahiya",
+    "level": "Kota Tangerang",
+    "date": "2025",
+    "desc": "Penghargaan yang diraih kontingen SMP PGRI 1 Tangerang pada event tingkat Kota Tangerang.",
+    "iconName": "Medal",
+    "color": "blue"
+  },
+  {
+    "id": 4,
+    "title": "Anugrah Bintang Tahunan Pramuka atas nama Hanifah Wardina Azzahra & Viqa Alaina Addri",
+    "level": "Kota Tangerang",
+    "date": "2025",
+    "desc": "Penghargaan yang diraih kontingen SMP PGRI 1 Tangerang pada event tingkat Kota Tangerang.",
+    "iconName": "Medal",
+    "color": "blue"
+  },
+  {
+    "id": 5,
+    "title": "Juara 1 Kompetisi Nasional TKA Bintang Pelajar",
+    "level": "Provinsi Banten",
+    "date": "2025",
+    "desc": "Penghargaan yang diraih kontingen SMP PGRI 1 Tangerang pada event tingkat Provinsi Banten.",
+    "iconName": "Medal",
+    "color": "blue"
+  },
+  {
+    "id": 6,
+    "title": "Juara 2 Lomba Basket 3x3 Putra",
+    "level": "Kota Tangerang",
+    "date": "2025",
+    "desc": "Penghargaan yang diraih kontingen SMP PGRI 1 Tangerang pada event tingkat Kota Tangerang.",
+    "iconName": "Medal",
+    "color": "blue"
+  },
+  {
+    "id": 7,
+    "title": "Juara 2 Lomba Bola Basket Beregu Putra SMP",
+    "level": "Kota Tangerang",
+    "date": "2025",
+    "desc": "Penghargaan yang diraih kontingen SMP PGRI 1 Tangerang pada event tingkat Kota Tangerang.",
+    "iconName": "Medal",
+    "color": "blue"
+  },
+  {
+    "id": 8,
+    "title": "Juara 3 Tenis Meja Tunggal Putra SMP",
+    "level": "Kota Tangerang",
+    "date": "2025",
+    "desc": "Penghargaan yang diraih kontingen SMP PGRI 1 Tangerang pada event tingkat Kota Tangerang.",
+    "iconName": "Medal",
+    "color": "blue"
+  },
+  {
+    "id": 9,
+    "title": "Juara 1 Lomba Baca Puisi HUT Kota Tangerang Tingkat SMP",
+    "level": "Kec. Pinang",
+    "date": "2025",
+    "desc": "Penghargaan yang diraih kontingen SMP PGRI 1 Tangerang pada event tingkat Kec. Pinang.",
+    "iconName": "Medal",
+    "color": "blue"
+  }
+]

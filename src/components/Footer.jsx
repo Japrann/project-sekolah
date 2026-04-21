@@ -10,18 +10,6 @@ import {
 import './Footer.css';
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
-  const [isSubscribed, setIsSubscribed] = useState(false);
-
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    if (email) {
-      setIsSubscribed(true);
-      setTimeout(() => setIsSubscribed(false), 3000);
-      setEmail('');
-    }
-  };
-
   const quickLinks = [
     { to: '/', label: 'Home' },
     { to: '/informasi', label: 'Informasi' },
@@ -40,40 +28,6 @@ const Footer = () => {
 
   return (
     <footer className="footer-wrapper">
-      {/* NEWSLETTER */}
-      <section className="newsletter-section">
-        <div className="container newsletter-container">
-          <div className="newsletter-icon-bg">
-            <Send className="newsletter-icon" />
-          </div>
-          <h2>Tetap Terhubung dengan Kami</h2>
-          <p>Dapatkan informasi terbaru tentang pendaftaran, prestasi, dan kegiatan sekolah langsung di email Anda</p>
-          
-          {!isSubscribed ? (
-            <form onSubmit={handleSubscribe} className="newsletter-form">
-              <input 
-                type="email" 
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Masukkan email Anda"
-                required
-              />
-              <button type="submit" className="btn-subscribe">
-                <Send className="btn-subscribe-icon" />
-                Subscribe
-              </button>
-            </form>
-          ) : (
-            <div className="subscribe-success">
-              <div className="success-icon-wrapper">
-                <Send className="success-icon-small" />
-              </div>
-              <span>Terima kasih telah berlangganan!</span>
-            </div>
-          )}
-        </div>
-      </section>
-
       {/* FOOTER MAIN */}
       <div className="container footer-main">
         <div className="footer-grid">
@@ -96,7 +50,8 @@ const Footer = () => {
                <a href="https://www.instagram.com/smppgri1tangerang/" className="social-link instagram"><Instagram /></a>
                <a href="https://twitter.com/smppgri1tngr" className="social-link twitter"><Twitter /></a>
                <a href="https://www.youtube.com/c/SMPPGRI1Tangerang" className="social-link youtube"><Youtube /></a>
-               <a href="https://www.tiktok.com/@smppgri1tangerang?refer=creator_embed" className="social-link tiktok" style={{background: 'rgba(255,255,255,0.1)'}}><Globe /></a>
+               <a href="https://www.tiktok.com/@smppgri1tangerang?refer=creator_embed" className="social-link tiktok"><Globe /></a>
+               <a href="https://wa.me/08121898951" className="social-link whatsapp"><MessageCircle /></a>
             </div>
             <div className="brand-badges">
               <div className="badge badge-yellow"><Award className="badge-icon" /> Sekolah Adiwiyata</div>
@@ -139,7 +94,7 @@ const Footer = () => {
                  <MapPin className="contact-icon" />
                  <div>
                    <span>Alamat</span>
-                   <p>Komplek Pendidikan Cikokol<br/>Jl. Perintis Kemerdekaan 2<br/>Tangerang Banten</p>
+                   <p>Komplek Pendidikan Cikokol<br/>Jl. Perintis Kemerdekaan 2, Depan Tangcity Mall / Samping SMKN 1 Tangerang<br/>Kota Tangerang</p>
                  </div>
                </div>
                <div className="contact-item">

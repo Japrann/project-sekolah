@@ -16,6 +16,7 @@
   font-weight: 900;
   margin-bottom: 24px;
   background: linear-gradient(to right, #facc15, #f59e0b);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -171,4 +172,46 @@
 
 .timeline-card:hover .read-more {
   text-decoration: underline;
+}
+
+/* Comprehensive Mobile Responsiveness Improvements */
+@media (max-width: 480px) {
+  .prestasi-header {
+    padding: 60px 16px;
+  }
+  
+  .prestasi-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .prestasi-content {
+    padding: 40px 16px;
+  }
+  
+  .timeline-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+  
+  .timeline-card h2 {
+    font-size: 1.25rem;
+  }
+  
+  .timeline-item {
+    gap: 12px;
+  }
+  
+  .prestasi-timeline::before {
+    left: 20px; /* Aligns with smaller icon box */
+  }
+  
+  .timeline-icon-box {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .t-icon {
+    width: 20px;
+    height: 20px;
+  }
 }

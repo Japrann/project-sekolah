@@ -1,0 +1,135 @@
+.dashboard-home {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dash-header {
+  margin-bottom: 25px;
+}
+
+.dash-header h1 {
+  font-size: 24px;
+  color: #343a40;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.dash-header p {
+  color: #6c757d;
+  font-size: 15px;
+}
+
+.stat-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.stat-info h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stat-info p {
+  font-size: 14px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.stat-icon {
+  opacity: 0.5;
+}
+
+/* Colors matching AdminLTE style */
+.stat-card.pendaftar { background-color: #17a2b8; }
+.stat-card.guru { background-color: #28a745; }
+.stat-card.berita { background-color: #ffc107; color: #343a40; }
+.stat-card.berita .stat-icon { opacity: 0.7; }
+.stat-card.visitor { background-color: #dc3545; }
+
+/* Charts Area */
+.dashboard-charts {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+  border-top: 3px solid #007bff;
+  padding: 20px;
+}
+
+.chart-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f4f6f9;
+  margin-bottom: 20px;
+}
+
+.chart-header h3 {
+  font-size: 16px;
+  color: #343a40;
+  margin: 0;
+}
+
+.chart-body {
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 25px;
+  position: relative;
+  background: repeating-linear-gradient(to top, #f4f6f9, #f4f6f9 1px, transparent 1px, transparent 20%);
+}
+
+.bar {
+  width: 40px;
+  background-color: #17a2b8;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  transition: height 1s ease;
+}
+
+.bar.active {
+  background-color: #007bff;
+}
+
+.bar span {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #6c757d;
+  font-size: 12px;
+  font-weight: 500;
+}
