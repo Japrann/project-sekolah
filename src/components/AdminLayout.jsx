@@ -48,12 +48,12 @@ const AdminLayout = ({ children }) => {
 
         <nav className="sidebar-nav">
            <ul>
-             <li className="nav-header">MENU UTAMA</li>
+             <li className="admin-nav-header">MENU UTAMA</li>
              {navLinks.map((link, idx) => {
                const isActive = location.pathname === link.path;
                return (
                  <li key={idx}>
-                   <Link to={link.path} className={`nav-link ${isActive ? 'active' : ''}`}>
+                   <Link to={link.path} className={`admin-nav-link ${isActive ? 'active' : ''}`}>
                      {link.icon} <span>{link.name}</span>
                    </Link>
                  </li>
